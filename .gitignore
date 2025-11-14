@@ -1,0 +1,117 @@
+# -----------------------------
+# Python bytecode & cache
+# -----------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.pkl
+
+# Compiled C extensions
+*.so
+*.dll
+*.dylib
+
+# -----------------------------
+# Virtual environments
+# -----------------------------
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# -----------------------------
+# Package / build artifacts
+# -----------------------------
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+
+# -----------------------------
+# Jupyter / notebooks
+# -----------------------------
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# -----------------------------
+# IDE / Editor settings
+# -----------------------------
+# VS Code
+.vscode/
+.history/
+*.code-workspace
+
+# PyCharm / IntelliJ
+.idea/
+*.iml
+
+# Others
+*.swp
+*.swo
+
+# -----------------------------
+# OS junk files
+# -----------------------------
+.DS_Store
+.DS_Store?
+Thumbs.db
+desktop.ini
+
+# -----------------------------
+# Logs & local debug files
+# -----------------------------
+logs/
+*.log
+*.out
+*.tmp
+
+# -----------------------------
+# Streamlit
+# -----------------------------
+.streamlit/secrets.toml
+.streamlit/config.toml
+
+# -----------------------------
+# Model artifacts (generated)
+# -----------------------------
+# You generate these via scripts/build_artifacts.py
+models/*
+!models/.gitkeep
+
+# -----------------------------
+# Data (optional – keep raw if small)
+# -----------------------------
+# If you have large raw data, ignore it here.
+# For your project 1_Recipe_csv.csv is fine to commit,
+# so we do NOT ignore data/ by default.
+# Uncomment below only if you later add big local files:
+# data/raw/*
+# data/interim/*
+# data/processed/*
+
+# -----------------------------
+# Local config / environment
+# -----------------------------
+*.env
+.env.*
+*.ini
+*.cfg
+*.toml
+
+# -----------------------------
+# Cache dirs (various tools)
+# -----------------------------
+.cache/
+.pytest_cache/
+.mypy_cache/
+pytest_cache/
+coverage.xml
+htmlcov/
+.tox/
+.nox/
