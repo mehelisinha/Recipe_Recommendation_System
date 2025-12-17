@@ -1,4 +1,4 @@
-# Antigravity Recipe Recommender 🍲
+# Content-Based Recipe Recommendation System 🍲
 
 A content-based recipe recommendation system that suggests recipes based on ingredients you have in your pantry or by finding similarities to your favorite dishes. 
 
