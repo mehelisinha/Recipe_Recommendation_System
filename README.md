@@ -1,4 +1,4 @@
-# Content-Based Recipe Recommendation System 🍲
+# Content-Based Recipe Recommender 🍲
 
 A content-based recipe recommendation system that suggests recipes based on ingredients you have in your pantry or by finding similarities to your favorite dishes. 
 
