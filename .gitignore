@@ -81,8 +81,8 @@ logs/
 # Model artifacts (generated)
 # -----------------------------
 # You generate these via scripts/build_artifacts.py
-models/*
-!models/.gitkeep
+# models/*
+# !models/.gitkeep
 
 # -----------------------------
 # Data (optional – keep raw if small)
