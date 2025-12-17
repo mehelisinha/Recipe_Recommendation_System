@@ -182,6 +182,15 @@ with st.sidebar:
         topk = st.slider("How many results?", min_value=5, max_value=30, value=10, step=1)
         category = st.text_input("Filter: Category contains", "")
         subcategory = st.text_input("Filter: Subcategory contains", "")
+        
+        st.markdown("---")
+        st.markdown("**Strictness**")
+        match_count = st.checkbox(
+            "Exact Ingredient Count", 
+            value=False,
+            help="If checked, only recipes with the EXACT same number of ingredients as your list will be returned."
+        )
+        
         run = st.button("Search", type="primary")
         title = ""
     else:
@@ -189,6 +198,7 @@ with st.sidebar:
         free = None
         category = ""
         subcategory = ""
+        match_count = False
         title = st.text_input("Recipe title", placeholder="e.g. Churros II")
         topk = st.slider("How many results?", min_value=5, max_value=30, value=10, step=1)
         run = st.button("Find similar", type="primary")
@@ -311,7 +321,7 @@ if run:
                 if subcategory:
                     filters["subcategory"] = subcategory
 
-                out = rec.search(q, top_k=topk, filters=filters)
+                out = rec.search(q, top_k=topk, filters=filters, match_count=match_count)
 
                 if out.empty:
                     st.info("No matching recipes found. Try fewer filters or different keywords.")
