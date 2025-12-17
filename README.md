@@ -1,4 +1,4 @@
-# Antigravity Recipe Recommender 🍲
+# Content-Based Recipe Recommender 🍲
 
 A content-based recipe recommendation system that suggests recipes based on ingredients you have in your pantry or by finding similarities to your favorite dishes. 
 
@@ -121,4 +121,4 @@ Final Score = (0.4 * TF-IDF_Similarity) + (0.6 * Ingredient_Overlap)
 ---
 
 ## 📝 License
-This project is for educational purposes. Data provided by the user.
+This project is for educational purposes.
