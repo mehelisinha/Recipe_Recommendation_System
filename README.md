@@ -2,6 +2,7 @@
 
 A content-based recipe recommendation system that suggests recipes based on ingredients you have in your pantry or by finding similarities to your favorite dishes. 
 This app has been deployed to Streamlit which can be accessed by the link: https://reciperecommendations.streamlit.app/
+
 Video demonstration can be accessed via https://youtu.be/BJ5iBWy9Xoc
 
 **Enhanced with a "Premium" Streamlit UI and a Hybrid Recommendation Engine.**
